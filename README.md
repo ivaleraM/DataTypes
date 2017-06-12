@@ -46,7 +46,7 @@ In order to run GLFM on your data, you need to:
 
 3) Compile the C++ code, either for MATLAB or for PYTHON
     - For MATLAB:
-        - Add path 'Ccode' (or Baseline to run the baseline) and its children to Matlab workspace
+        - Add path 'Ccode' (or 'Baseline' to run the baseline) and its children to Matlab workspace
         - From matlab command window, execute:
             mex  -lgsl -lgmp -lgslcblas DataTypes.cpp  (or Baseline.cpp to run the baseline)
 
