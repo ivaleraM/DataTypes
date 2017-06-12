@@ -1,13 +1,13 @@
 Automatic Discovery of the Statistical Types of Variables in a Dataset
 ---------------------------------------------------------
 
-This code implements the Bayesian method inctroduced in 
+This code implements the Bayesian method and reproduces the experiments in 
 
      I. Valera and Z. Ghahramani, 
      "Automatic Discovery of the Statistical Types of Variables in a Dataset", 
      34th International Conference on Machine Learning (ICML 2017). Sydney (Australia), 2017.
 
-Please, use the above details to cite this work. The implemented code here, reproduced the experiments in the above paper.
+Please, use the above details to cite this work.
 
 
 Calling from Matlab
