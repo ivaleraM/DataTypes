@@ -25,7 +25,7 @@ Calling from Matlab
 
 Alternatively, the fucntion simComp(datasetC,Nits,KK,itt) runs baseline in the paper above, which assumes all the continuous variables to be Gaussian and all the dicrete variables to be categorical
 
-\Requirements
+Requirements
 ------------
 
     - Matlab 2012b or higher
