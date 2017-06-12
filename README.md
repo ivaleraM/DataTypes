@@ -1,7 +1,7 @@
 Automatic Discovery of the Statistical Types of Variables in a Dataset
 ---------------------------------------------------------
 
-This code implements the Bayesian method and reproduces the experiments in 
+This code implements the Bayesian method and reproduces the experiment in 
 
      I. Valera and Z. Ghahramani, 
      "Automatic Discovery of the Statistical Types of Variables in a Dataset", 
@@ -15,7 +15,7 @@ Calling from Matlab
     function simLik(datasetC,Nits,KK,it)
     %% runs proposed Bayesian method to infer the datatypes in a dataset.
     % Inputs:
-        %   datasetC: name of the dataset to be inferred
+    %   datasetC: name of the dataset to be inferred
     %   Nit: number of interations of the Gibbs sampler
     %   KK: low rank representation complexity (i.e., number of features)
     %   itt: number of simulation
