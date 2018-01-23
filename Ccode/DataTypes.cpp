@@ -1065,7 +1065,7 @@ void mexFunction( int nlhs, mxArray* plhs[], int nrhs, const mxArray* prhs[] ) {
 
                         //Positive
                         p[3]=0; //logFun(W[d][3]);
-                        Bd_view = gsl_matrix_submatrix (Bint[d],0,0, Kest,1);
+                        Bd_view = gsl_matrix_submatrix (Bpos[d],0,0, Kest,1);
                         matrix_multiply(&Zn_view.matrix,&Bd_view.matrix,aux,1,0,CblasTrans,CblasNoTrans);
                         p[3]= p[3]+ xpdf_pos(xnd, 2/maxX[d], gsl_matrix_get (aux, 0, 0), s2Y, s2u);
                         //printf("p(%d)=%f \n",3, p[3]);      
@@ -1407,7 +1407,7 @@ void mexFunction( int nlhs, mxArray* plhs[], int nrhs, const mxArray* prhs[] ) {
                         }else if (S[n][d]==3){
                              
                         }else if (S[n][d]==4){
-                            Bd_view = gsl_matrix_submatrix (Bdir[d],0,0, Kest,1);
+                            Bd_view = gsl_matrix_submatrix (Bpos[d],0,0, Kest,1);
                             matrix_multiply(&Zn_view.matrix,&Bd_view.matrix,aux,1,0,CblasTrans,CblasNoTrans);
                              LIK[d][n]= xpdf_dir(fre_1(tnd,2/maxX[d],0),theta_dir[d],gsl_matrix_get (aux, 0, 0),s2Y,s2u);
                             
