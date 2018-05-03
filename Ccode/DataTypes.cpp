@@ -1163,7 +1163,7 @@ void mexFunction( int nlhs, mxArray* plhs[], int nrhs, const mxArray* prhs[] ) {
                         p[1]=0;//logFun(W[d][1]);
                         Bd_view = gsl_matrix_submatrix (Bint[d],0,0, Kest,1);
                         matrix_multiply(&Zn_view.matrix,&Bd_view.matrix,aux,1,0,CblasTrans,CblasNoTrans);
-                        p[1]= p[1]+ xpdf_re(xnd, 2/(maxX[d]-meanX[d]),meanX[d], gsl_matrix_get (aux, 0, 0), s2Y, s2u);
+                        p[1]= p[1]+ xpdf_int(xnd, 2/(maxX[d]-meanX[d]),meanX[d], gsl_matrix_get (aux, 0, 0), s2Y, s2u);
                         //printf("p(%d)=%f ",1, p[1]);      
                         p[1]=p[1]+logFun(W[d][1]);
 
